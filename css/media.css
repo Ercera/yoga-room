@@ -221,7 +221,7 @@
         width: 90vw;
     }
 
-    .types {
+    .types-info {
         justify-content: space-around;
         column-gap: 40px;
         row-gap: 60px;
@@ -297,9 +297,9 @@
 
     /* Types of meditation */
 
-    .types {
+    .types-info {
         margin: 60px 0 40px;
-        row-gap: 80px;
+        row-gap: 50px;
     }
 
     /* Practice */
@@ -367,13 +367,6 @@
     }
 
     /* Types of meditation */
-
-    .types {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 100px;
-    }
 
     .btn--learn {
         width: 210px;
@@ -540,8 +533,15 @@
         height: auto;
     }
 
+    .practice__list {
+        row-gap: 30px;
+    }
+
     .practice-card {
+        height: 250px;
         padding-left: 20px;
+        filter: drop-shadow(0px 8px 50px rgba(26, 127, 114, 0.2));
+        background-image: url(./../img/main/s3-practice/card-mw.svg);
     }
 
     .practice-card__text {
