@@ -92,7 +92,7 @@
     .nav--mobile .nav__toggle {
         position: fixed;
         top: 51px;
-        right: 32px;
+        right: 100px;
     }
 
     /* Card-set */
@@ -205,6 +205,12 @@
         font-size: 16px;
     }
 
+    /* Navigation */
+
+    .nav--mobile .nav__toggle {
+        right: 70px;
+    }
+
     /* Start */
 
     .start {
@@ -295,6 +301,12 @@
         padding: 0 40px;
     }
 
+    /* Navigation */
+
+    .nav--mobile .nav__toggle {
+        right: 40px;
+    }
+
     /* Types of meditation */
 
     .types-info {
@@ -353,7 +365,7 @@
     /* Navigation */
 
     .nav--mobile .nav__toggle {
-        right: 22px;
+        right: 20px;
     }
 
     .nav--mobile .nav__list {
@@ -612,9 +624,9 @@
         padding: 0 15px;
     }
 
-    /* .title {
-        row-gap: 0;
-    } */
+    .nav--mobile .nav__toggle {
+        right: 10px;
+    }
 
     /* Start */
 
