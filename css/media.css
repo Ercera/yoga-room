@@ -1,0 +1,705 @@
+@media (min-width:1700px) {
+
+    /* Start */
+    .start-title br:last-child {
+        display: none;
+    }
+
+    /* Practice */
+
+    .practice br {
+        display: none;
+    }
+
+    .practice br:nth-child(2) {
+        display: block;
+    }
+
+    /* Best */
+
+    .best-info .container {
+        padding: 0;
+    }
+
+    /* Transform your body */
+
+    .transform__title br {
+        display: none;
+    }
+}
+
+@media (max-width:1700px) {
+
+    /* General */
+    .container {
+        padding: 0 100px;
+    }
+
+    /* Navigation */
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .no-scroll {
+        overflow-y: hidden;
+    }
+
+    .nav--mobile {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 30px;
+        z-index: 6;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 30px;
+
+        background: linear-gradient(209deg, #b8c2c0 -17.38%, #dcf7f2 78.4%);
+    }
+
+    .nav--mobile .logo {
+        position: fixed;
+    }
+
+    .nav--mobile .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 0;
+        padding: 110px 0;
+        row-gap: 70px;
+    }
+
+    .nav--mobile .nav__list h3,
+    .nav--mobile .nav__list h4 {
+        font-size: 35px;
+    }
+
+    .nav--mobile .nav__list a.active::after,
+    .nav--mobile .nav__list a:hover::after {
+        display: none;
+    }
+
+    .nav--mobile .nav__toggle {
+        position: fixed;
+        top: 51px;
+        right: 32px;
+    }
+
+    /* Card-set */
+    .types {
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    /* Practice */
+
+    .practice {
+        height: auto;
+    }
+
+    .practice br {
+        display: none;
+    }
+
+    .practice br:nth-child(2) {
+        display: block;
+    }
+
+    .practice__content {
+        flex-direction: column-reverse;
+    }
+
+    .practice-card {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .music {
+        height: auto;
+    }
+
+    .music__content {
+        flex-direction: column;
+    }
+
+    .best-info {
+        padding: 128px 0 215px;
+    }
+
+    .best__content {
+        padding: 0;
+    }
+
+    .best-list {
+        row-gap: 60px;
+    }
+
+    .best-card {
+        padding: 25px 25px 15px;
+        height: 230px;
+        justify-content: flex-start;
+    }
+
+    .best__img {
+        display: none;
+    }
+
+    /* Transform your life */
+
+    .transform__list {
+        justify-content: center;
+    }
+
+    .transform-card,
+    .transform__img {
+        max-width: 450px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    /* General */
+    .container,
+    .best-info .container {
+        padding: 0 70px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Start */
+
+    .start {
+        padding: 70px 15px 2px;
+        height: 100%;
+    }
+
+    .start-title {
+        max-width: 800px;
+    }
+
+    .start-img {
+        height: auto;
+        width: 90vw;
+    }
+
+    .types {
+        justify-content: space-around;
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+
+    .types__card-img {
+        margin: 40px auto 10px;
+    }
+
+    .practice__img {
+        height: auto;
+        width: 90vw;
+    }
+
+    .music__img {
+        width: 90vw;
+        height: auto;
+    }
+
+    /* Best */
+
+    .best-info {
+        padding: 120px 0 180px;
+    }
+
+    .best__content {
+        column-gap: 40px;
+    }
+
+    .best-list {
+        row-gap: 40px;
+    }
+
+    .best-card {
+        padding: 30px 20px 15px;
+    }
+
+    .best-card__desc {
+        -webkit-line-clamp: 4;
+    }
+
+    /* Transform your body */
+
+    .transform {
+        height: auto;
+    }
+
+    .transform__list,
+    .transform__list:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .transform__list {
+        row-gap: 50px;
+    }
+
+    .transform-card,
+    .transform__img {
+        max-width: 600px;
+    }
+
+    .transform-card {
+        align-items: center;
+    }
+}
+
+@media (max-width:992px) {
+    /* General */
+
+    .container {
+        padding: 0 40px;
+    }
+
+    /* Types of meditation */
+
+    .types {
+        margin: 60px 0 40px;
+        row-gap: 80px;
+    }
+
+    /* Practice */
+
+    .practice-card {
+        background-position: right;
+    }
+
+    /* Best */
+
+    .best__content {
+        column-gap: 20px;
+    }
+
+    .best-list {
+        row-gap: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Общие теги */
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Navigation */
+
+    .nav--mobile .nav__toggle {
+        right: 22px;
+    }
+
+    .nav--mobile .nav__list {
+        row-gap: 50px;
+    }
+
+    /* Start */
+
+    .start-title {
+        max-width: 700px;
+    }
+
+    /* Types of meditation */
+
+    .types {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 100px;
+    }
+
+    .btn--learn {
+        width: 210px;
+        font-size: 24px;
+        border-radius: 25px;
+    }
+
+    /* Practice */
+
+    .practice-card {
+        width: 80vw;
+        padding: 0 35px;
+    }
+
+    .practice-card__text {
+        width: 60vw;
+        height: 120px;
+    }
+
+    .arrow {
+        bottom: -10px;
+    }
+
+    /* Music */
+
+    .music-card {
+        width: 85vw;
+    }
+
+    .music-card__info {
+        width: 360px;
+    }
+
+    /* Best */
+
+    .best-info {
+        padding: 110px 0 170px;
+    }
+
+    .best__content {
+        column-gap: 30px;
+    }
+
+    .best-list {
+        row-gap: 30px;
+    }
+
+    .best-card {
+        padding: 15px;
+        height: 170px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .best-card__desc {
+        display: none;
+    }
+
+    /* Footer */
+
+    .footer__menu {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width:654px) {
+    /* Start */
+
+    .start-title {
+        margin-bottom: 60px;
+    }
+
+    .start-title br:first-child {
+        display: none;
+    }
+
+    .start-title br:last-child {
+        display: block;
+    }
+
+    /* Practice */
+
+    .practice br:nth-child(1) {
+        display: block;
+    }
+
+    .practice br:nth-child(2) {
+        display: none;
+    }
+
+    .practice-card {
+        width: 90vw;
+    }
+
+    .practice-card__text {
+        width: 70vw;
+    }
+
+    .practice-card__desc {
+        -webkit-line-clamp: 4;
+    }
+
+    /* Music */
+
+    .music__list {
+        width: 90vw;
+    }
+
+    .music-card {
+        width: inherit;
+    }
+
+    /* Footer */
+
+    .footer__menu {
+        column-gap: 5;
+        justify-content: space-between;
+    }
+
+    .footer__menu a:nth-child(n+6) {
+        display: none;
+    }
+
+    .footer__border:nth-child(n+6) {
+        display: none;
+    }
+}
+
+@media (max-width:540px) {
+
+    h1 {
+        font-size: 43px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    /* Start */
+
+    .start-title {
+        max-width: 400px;
+    }
+
+    .start-title h1 {
+        margin-bottom: 30px;
+    }
+
+    /* Types of meditation */
+
+    .types__card {
+        width: 75vw;
+    }
+
+    .types__card-text {
+        padding: 0 20px;
+        height: 100px;
+    }
+
+    /* Practice */
+
+    .practice {
+        height: auto;
+    }
+
+    .practice-card {
+        padding-left: 20px;
+    }
+
+    .practice-card__text {
+        height: 140px;
+    }
+
+    .practice-card__desc {
+        -webkit-line-clamp: 5;
+    }
+
+    .arrow {
+        bottom: -15px;
+    }
+
+    /* Music */
+
+    .music__list {
+        row-gap: 30px;
+    }
+
+    .music-card__title,
+    .music-card__desc {
+        padding-left: 15px;
+    }
+
+    .music-card__btn {
+        padding-right: 15px;
+    }
+
+    .btn--music-play {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Best */
+
+    .best__content {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .best-list {
+        max-height: 480px;
+        max-width: 80vw;
+        row-gap: 50px;
+    }
+
+    .best-card {
+        height: 100px;
+        width: 80vw;
+    }
+
+    .best-card--left,
+    .best-card--right {
+        background: linear-gradient(180deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%) padding-box,
+            linear-gradient(180deg, #378377 -5.44%, rgba(176, 234, 226, 0) 104.61%) border-box;
+    }
+}
+
+@media (max-width:420px) {
+
+    /* General */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* .title {
+        row-gap: 0;
+    } */
+
+    /* Start */
+
+    .start-title {
+        max-width: 320px;
+    }
+
+    .start-title,
+    .start-title h1,
+    .start-info {
+        margin-bottom: 30px;
+    }
+
+    .btn--start {
+        width: 250px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    /* Types of meditation */
+
+    .types__card {
+        width: 85vw;
+        height: 480px;
+    }
+
+    .types__card-text {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    /* Practice */
+
+    .practice-card {
+        padding: 0 10px;
+    }
+
+    /* Music */
+
+    .music-list {
+        width: auto;
+    }
+
+    .music-card__info {
+        width: 200px;
+    }
+
+    .music-card__title,
+    .music-card__desc {
+        padding-left: 10px;
+    }
+
+    .music-card__btn {
+        padding-right: 10px;
+    }
+
+    .music-card__title {
+        margin-bottom: 0;
+    }
+
+    .music-card__desc {
+        display: none;
+    }
+
+    /* Best */
+
+    .best__content {
+        row-gap: 30px;
+    }
+
+    .best-list {
+        max-height: 480px;
+        max-width: 90vw;
+        row-gap: 30px;
+    }
+
+    .best-card {
+        height: 80px;
+        width: 90vw;
+    }
+}
+
+@media (max-width:320px) {
+
+    .nav--mobile .nav__list h3,
+    .nav--mobile .nav__list h4 {
+        font-size: 30px;
+    }
+
+    /* Start */
+
+}

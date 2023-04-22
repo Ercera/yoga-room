@@ -1,0 +1,117 @@
+.btn {
+    background: linear-gradient(180deg, #259385 0%, #159685 100%);
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+}
+
+.nav__toggle {
+    display: none;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #217C71 0%, #159685 100%);
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn--start {
+    width: 300px;
+    height: 75px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    box-shadow: 0px 20px 40px rgba(21, 113, 101, 0.2);
+    border-radius: 50px;
+}
+
+.btn--learn {
+    width: 210px;
+    height: 55px;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    box-shadow: 0px 13px 28px rgba(26, 127, 114, 0.2);
+    border-radius: 30px;
+}
+
+.btn--music-play {
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid #fff;
+    box-shadow: 0px 25px 30px rgba(179, 228, 221, 0.3), 0px 9px 24px rgba(26, 127, 114, 0.23);
+    border-radius: 50%;
+}
+
+.btn--music-play:hover {
+    filter: drop-shadow(0px 25px 30px rgba(179, 228, 221, 0.3), 0px 9px 24px rgba(26, 127, 114, 0.23));
+    box-shadow: 0px 25px 30px rgba(179, 228, 221, 0.4), 0px 9px 24px rgba(26, 127, 114, 0.5);
+}
+
+/* Adaptive */
+/* Burger menu */
+
+.btn--menu-wrapper {
+    --time: 0.1s;
+    --width: 40px;
+    --height: 30px;
+    --line-height: 4px;
+    --color: #1D9585;
+
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--mobile {
+    position: relative;
+    width: var(--width);
+    height: var(--line-height);
+    background-color: var(--color);
+}
+
+.btn--mobile::before,
+.btn--mobile::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    display: block;
+    width: var(--width);
+    height: var(--line-height);
+    background-color: var(--color);
+    transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.btn--mobile::before {
+    top: calc(var(--line-height) * -2);
+}
+
+.btn--mobile::after {
+    top: calc(var(--line-height) * 2);
+}
+
+.btn--mobile.btn--mobile-active {
+    background-color: transparent;
+}
+
+.btn--mobile.btn--mobile-active::before,
+.btn--mobile.btn--mobile-active::after {
+    top: 0;
+    transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.btn--mobile.btn--mobile-active::before {
+    transform: rotate(45deg);
+}
+
+.btn--mobile.btn--mobile-active::after {
+    transform: rotate(-45deg);
+}
