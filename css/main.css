@@ -89,7 +89,7 @@ p {
 }
 
 .header {
-    min-height: 100%;
+    height: 1195px;
     background-image: url(./../img/header/bg.jpg);
 
     background-size: cover;
@@ -199,7 +199,9 @@ p {
 .types {
     margin: 120px 0 44px;
     height: 700px;
+}
 
+.types-info {
     display: flex;
     justify-content: space-between;
     flex-direction: row;

@@ -98,6 +98,10 @@
     /* Card-set */
     .types {
         height: auto;
+    }
+
+    .types-info {
+        height: auto;
         justify-content: center;
         flex-wrap: wrap;
         gap: 50px;
