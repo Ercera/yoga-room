@@ -103,6 +103,17 @@ p {
     row-gap: 22px;
 }
 
+/* Pointer-events */
+.types-card__title,
+.types-card__desc,
+.music-card__title,
+.music-card__desc,
+.practice-card__title,
+.practice-card__desc,
+.best-card {
+    pointer-events: none;
+}
+
 /* Navigation */
 
 .nav {
@@ -165,8 +176,8 @@ p {
 
 /* Header - Main */
 
-.start {
-    height:1065px;
+.meditation {
+    height: 1065px;
     background-image: url(./../img/main/s1-meditation/bg-meditation.svg);
 
     background-size: cover;
@@ -174,7 +185,7 @@ p {
     background-position: center center;
 }
 
-.start__info {
+.meditation__info {
     padding-top: 70px;
     display: flex;
     flex-direction: column;
@@ -182,11 +193,11 @@ p {
     text-align: center;
 }
 
-.start__title {
+.meditation__title {
     margin-bottom: 30px;
 }
 
-.start__img {
+.meditation__img {
     max-width: 591px;
     max-height: 558px;
 }
@@ -207,7 +218,7 @@ p {
     column-gap: 150px;
 }
 
-.types__card {
+.types-card {
     width: 420px;
     height: 536px;
 
@@ -234,17 +245,17 @@ p {
     background-image: url(./../img/main/s2-cards/card-sound.svg);
 }
 
-.types__card-img {
+.types-card__img {
     margin: 50px auto 20px;
     width: 100px;
     height: auto;
 }
 
-.types__card-title {
+.types-card__title {
     margin-bottom: 20px;
 }
 
-.types__card-text {
+.types-card__desc {
     margin-bottom: 60px;
     height: 92px;
     padding: 0 48px;
@@ -429,7 +440,7 @@ p {
     border: 2px solid transparent;
     border-radius: 15px;
     background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 48.89%, #EDFBF9 96.77%) padding-box,
-                linear-gradient(90deg, #1E9787 0%, rgba(26, 127, 114, 0.38) 49.39%, rgba(26, 127, 114, 0.13) 73.58%, rgba(26, 127, 114, 0.04) 91.23%) border-box;
+        linear-gradient(90deg, #1E9787 0%, rgba(26, 127, 114, 0.38) 49.39%, rgba(26, 127, 114, 0.13) 73.58%, rgba(26, 127, 114, 0.04) 91.23%) border-box;
     background-position: center center;
     z-index: 0;
 }
@@ -451,7 +462,7 @@ p {
 
 .music-card:hover {
     background: linear-gradient(90deg, #C3E2DE 27.22%, #CFF1ED 78.89%, #EDFBF9 98.77%) padding-box,
-                linear-gradient(90deg, #1E9787 0%, rgba(26, 127, 114, 0.38) 69.39%, rgba(26, 127, 114, 0.13) 83.58%, rgba(26, 127, 114, 0.04) 96.23%) border-box;
+        linear-gradient(90deg, #1E9787 0%, rgba(26, 127, 114, 0.38) 69.39%, rgba(26, 127, 114, 0.13) 83.58%, rgba(26, 127, 114, 0.04) 96.23%) border-box;
 }
 
 .music-card__info {
@@ -540,14 +551,14 @@ p {
 
 .best-card--left {
     background: linear-gradient(270deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%) padding-box,
-                linear-gradient(270deg, #378377 -5.44%, rgba(176, 234, 226, 0) 104.61%) border-box;
+        linear-gradient(270deg, #378377 -5.44%, rgba(176, 234, 226, 0) 104.61%) border-box;
     align-items: flex-end;
     text-align: end;
 }
 
 .best-card--right {
     background: linear-gradient(90deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%) padding-box,
-                linear-gradient(90deg, #378377 -5.44%, rgba(176, 234, 226, 0) 104.61%) border-box;
+        linear-gradient(90deg, #378377 -5.44%, rgba(176, 234, 226, 0) 104.61%) border-box;
     align-items: flex-start;
     text-align: start;
 }
@@ -656,7 +667,7 @@ p {
     height: 447px;
     min-height: 100%;
     position: relative;
-    
+
     background-image: url(./../img/footer/footer.png);
     background-position: center bottom;
     background-repeat: no-repeat;

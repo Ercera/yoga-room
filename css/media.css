@@ -1,7 +1,7 @@
 @media (min-width:1700px) {
 
-    /* Start */
-    .start__title br:last-child {
+    /* Meditation */
+    .meditation__title br:last-child {
         display: none;
     }
 
@@ -93,6 +93,12 @@
         position: fixed;
         top: 51px;
         right: 100px;
+    }
+
+    /* Meditation */
+
+    .meditation__title br:last-child {
+        display: none;
     }
 
     /* Card-set */
@@ -211,21 +217,23 @@
         right: 70px;
     }
 
-    /* Start */
+    /* Meditation */
 
-    .start {
-        padding: 70px 15px 2px;
+    .meditation {
+        padding: 0px 15px 2px;
         height: 100%;
     }
 
-    .start__title {
+    .meditation__title {
         max-width: 800px;
     }
 
-    .start__img {
+    .meditation__img {
         height: auto;
         width: 90vw;
     }
+
+    /* Types of meditation */
 
     .types-info {
         justify-content: space-around;
@@ -233,7 +241,7 @@
         row-gap: 60px;
     }
 
-    .types__card-img {
+    .types-card__img {
         margin: 40px auto 10px;
     }
 
@@ -372,9 +380,9 @@
         row-gap: 50px;
     }
 
-    /* Start */
+    /* Meditation */
 
-    .start__title {
+    .meditation__title {
         max-width: 700px;
     }
 
@@ -449,18 +457,18 @@
     }
 }
 
-@media (max-width:654px) {
-    /* Start */
+@media (max-width:695px) {
+    /* Meditation */
 
-    .start__title {
+    .meditation__title {
         margin-bottom: 60px;
     }
 
-    .start__title br:first-child {
+    .meditation__title br:first-child {
         display: none;
     }
 
-    .start__title br:last-child {
+    .meditation__title br:last-child {
         display: block;
     }
 
@@ -522,23 +530,23 @@
         font-size: 35px;
     }
 
-    /* Start */
+    /* Meditation */
 
-    .start__title {
+    .meditation__title {
         max-width: 400px;
     }
 
-    .start__title h1 {
+    .meditation__title h1 {
         margin-bottom: 30px;
     }
 
     /* Types of meditation */
 
-    .types__card {
+    .types-card {
         width: 75vw;
     }
 
-    .types__card-text {
+    .types-card__desc {
         padding: 0 20px;
         height: 100px;
     }
@@ -636,19 +644,19 @@
         right: 10px;
     }
 
-    /* Start */
+    /* Meditation */
 
-    .start__title {
+    .meditation__title {
         max-width: 320px;
     }
 
-    .start__title,
-    .start__title h1,
-    .start__info {
+    .meditation,
+    .meditation__title h1,
+    .meditation__info {
         margin-bottom: 30px;
     }
 
-    .btn--start {
+    .btn--meditation {
         width: 250px;
         height: 65px;
         font-size: 25px;
@@ -656,12 +664,12 @@
 
     /* Types of meditation */
 
-    .types__card {
+    .types-card {
         width: 85vw;
         height: 480px;
     }
 
-    .types__card-text {
+    .types-card__desc {
         padding: 0 10px;
         margin-bottom: 40px;
     }
@@ -723,7 +731,4 @@
     .nav--mobile .nav__list h4 {
         font-size: 30px;
     }
-
-    /* Start */
-
 }
