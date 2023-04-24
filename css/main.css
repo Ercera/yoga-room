@@ -89,12 +89,7 @@ p {
 }
 
 .header {
-    height: 1195px;
-    background-image: url(./../img/header/bg.jpg);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    height: 130px;
 }
 
 .title {
@@ -171,23 +166,27 @@ p {
 /* Header - Main */
 
 .start {
+    height:1065px;
+    background-image: url(./../img/main/s1-meditation/bg-meditation.svg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.start__info {
     padding-top: 70px;
-    height: 993px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.start-info {
-    margin-bottom: 70px;
     text-align: center;
 }
 
-.start-title {
+.start__title {
     margin-bottom: 30px;
 }
 
-.start-img {
+.start__img {
     max-width: 591px;
     max-height: 558px;
 }
@@ -438,10 +437,13 @@ p {
 .music-card::before {
     content: '';
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
     height: 100%;
+    margin: 2px 20px;
     border-radius: inherit;
     background-position: center center;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url(./../img/main/s4-music/bg-card-music-equalizer.svg);
     z-index: 1;
